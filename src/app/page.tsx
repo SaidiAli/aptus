@@ -1,113 +1,131 @@
-import Image from 'next/image'
+import ClippedImage from "@/components/ClippedImage";
+import Hero from "@/components/Hero";
+import Image from "next/image";
+import linus from "../../public/images/clients/linus.png";
+import tattoos from "../../public/images/clients/safe-tattoos-logo.jpg";
+import oluadepe from "../../public/images/clients/oluadepe.jpg";
+import footprint from "../../public/images/clients/footprint-logo.png";
+import afriven from "../../public/images/clients/afriven.png";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import {
+  CalendarDaysIcon,
+  EnvelopeIcon,
+  PaperAirplaneIcon,
+  PhoneIcon,
+} from "@heroicons/react/24/solid";
+import Link from "next/link";
+import ContactCTA from "@/components/contact-card";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main>
+      <Hero />
+
+      <div className="px-8 md:px-16">
+        <div className="pl-8 mt-12 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
+          <figure className="text-sm">
+            <blockquote className="text-neutral-600 [&amp;>*]:relative [&amp;>:first-child]:before:absolute [&amp;>:first-child]:before:right-full [&amp;>:first-child]:before:content-['“'] [&amp;>:last-child]:after:content-['”']">
+              <p>
+                We Are Helping To Lead The Digital Charge; We Can Help You Build
+                On Your Past Successes And Prepare For Your Great Future.
+              </p>
+            </blockquote>
+            <figcaption className="mt-6 font-semibold text-neutral-950">
+              - Champe Triumph, Founder
+            </figcaption>
+          </figure>
         </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+      {/* Services */}
+      <section className="px-8 md:px-16 py-16">
+        <div className="max-w-2xl">
+          <h3 className="font-bold mb-4 text-neutral-900 text-base">
+            Services
+          </h3>
+          <p className="text-4xl md:text-5xl mb-4 text-neutral-900 font-extrabold">
+            We help you identify, explore and respond to new opportunities.
           </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
+          <p className="text-neutral-500 text-lg">
+            As long as those opportunities involve giving us money to re-purpose
+            old projects — we can come up with an endless number of those.
           </p>
-        </a>
+        </div>
+        <div className="flex flex-col md:flex-row py-16 md:px-8 justify-between gap-4">
+          <ClippedImage />
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+          <div className="max-w-xl">
+            <div className="mb-8 md:mb-16">
+              <p className="text-gray-500">
+                <strong className="text-neutral-700 font-bold">
+                  Web development.
+                </strong>{" "}
+                We specialise in crafting beautiful, high quality marketing
+                pages. The rest of the website will be a shell that uses lorem
+                ipsum everywhere.
+              </p>
+            </div>
+            <div className="mb-8 md:mb-16">
+              <p className="text-gray-500">
+                <strong className="text-neutral-700 font-bold">
+                  Application development.
+                </strong>{" "}
+                We have a team of skilled developers who are experts in the
+                latest app frameworks, like Angular 1 and Google Web Toolkit.
+              </p>
+            </div>
+            <div className="mb-8 md:mb-16">
+              <p className="text-gray-500">
+                <strong className="text-neutral-700 font-bold">
+                  E-commerce.
+                </strong>{" "}
+                We are at the forefront of modern e-commerce development. Which
+                mainly means adding your logo to the Shopify store template
+                we’ve used for the past six years.
+              </p>
+            </div>
+            <div className="mb-8 md:mb-8">
+              <p className="text-gray-500">
+                <strong className="text-neutral-700 font-bold">
+                  Custom content management.
+                </strong>{" "}
+                At Studio we understand the importance of having a robust and
+                customised CMS. That’s why we run all of our client projects out
+                of a single, enormous Joomla instance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+      <section className="px-8 md:px-16 py-16 md:py-32">
+        <div className="m-auto max-w-3xl">
+          <p className="text-neutral-900 text-2xl">
+            Aptus Agency is an agency that offers comprehensive online marketing
+            services. We have been serving clients from various industries with
+            a diverse range of services. Our expertise lies in providing
+            professional IT solutions for various online marketing strategies. I
+            nstead of choosing any digital marketing agency, opt for a
+            trustworthy company like us.
           </p>
-        </a>
-      </div>
+        </div>
+      </section>
+
+      <section className="py-16 px-8">
+        <div className="bg-black w-full p-8 md:p-32 md:rounded-lg">
+          <p className="mb-8">We've worked with some amazing people</p>
+          <div className="grid grid-cols-2 md:flex justify-between overflow-scroll gap-3">
+            <Image src={linus} alt="client" className="w-auto h-40" />
+            <Image src={tattoos} alt="client" className="w-auto h-40" />
+            <Image src={afriven} alt="client" className="w-auto h-40" />
+            <Image src={footprint} alt="client" className="w-auto h-40" />
+            <Image src={oluadepe} alt="client" className="w-auto h-40" />
+          </div>
+        </div>
+      </section>
+
+      <ContactCTA />
     </main>
-  )
+  );
 }
