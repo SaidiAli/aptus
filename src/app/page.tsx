@@ -18,7 +18,7 @@ export default function Home() {
       <section className="p-8">
         <div className="w-full md:rounded-lg md:px-32">
           <p className="font-bold mb-4 text-neutral-900 text-base text-center">
-            We've worked with some amazing people
+            We&apos;ve worked with some amazing people
           </p>
           <div className="grid grid-cols-2 md:flex justify-between overflow-scroll gap-3">
             <Image src={linus} alt="client" className="w-auto h-32" />

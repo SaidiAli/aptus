@@ -9,7 +9,7 @@ export default function ContactCTA() {
     <div className="md:px-8 md:py-16" id="contact">
       <div className="px-8 md:px-32 pb-16 md:pb-32 pt-16 bg-black md:rounded-lg">
         <div className="mb-12 max-w-xl">
-          <h3 className="mb-3 text-3xl md:text-4xl">Let's Work Together</h3>
+          <h3 className="mb-3 text-3xl md:text-4xl">Let&apos;s Work Together</h3>
           <p className="text-xs">
             Whether you have a specific project in mind or are looking for a
             long-term partnership, let us know your goals and we will assist you
