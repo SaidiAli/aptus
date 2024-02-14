@@ -2,14 +2,14 @@
 
 import { Fragment, useState } from "react";
 import logo from "../../public/images/black-nobg.png";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import { Bars3Icon, PhoneIcon, XMarkIcon } from "@heroicons/react/24/solid";
 import { Dialog, Transition } from "@headlessui/react";
 import Link from "next/link";
 
 const navigation = [
   { name: "Development", href: "/web-development" },
   { name: "Digital Marketing", href: "/digital-marketing" },
-  { name: "Agency", href: "#" },
+  { name: "Agency", href: "#about" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -17,8 +17,8 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="absolute inset-x-0 top-0 z-50">
-      <nav
+    <nav className="inset-x-0 top-0 z-50 fixed backdrop-blur">
+      <div
         className="flex items-center justify-between p-6 lg:px-8"
         aria-label="Global"
       >
@@ -50,11 +50,11 @@ export default function Navbar() {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Log in <span aria-hidden="true">&rarr;</span>
+          <a href="tel:0777343212" className="text-sm font-semibold leading-6 text-gray-900">
+            <PhoneIcon className="w-auto h-4 inline"/> 0777 343 212
           </a>
         </div>
-      </nav>
+      </div>
       <Transition show={mobileMenuOpen}>
         <Dialog
           onClose={() => setMobileMenuOpen(false)}
@@ -122,6 +122,6 @@ export default function Navbar() {
           </Transition.Child>
         </Dialog>
       </Transition>
-    </header>
+    </nav>
   );
 }

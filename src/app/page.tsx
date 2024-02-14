@@ -126,7 +126,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-8 md:px-16 py-16 md:py-32">
+      <section className="px-8 md:px-16 py-16 md:py-32" id="about">
         <div className="m-auto max-w-3xl">
           <p className="text-neutral-900 text-2xl">
             Aptus Agency is an agency that offers comprehensive online marketing

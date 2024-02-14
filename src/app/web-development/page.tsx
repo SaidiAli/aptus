@@ -7,6 +7,7 @@ import Image from "next/image";
 import {
   ArrowRightEndOnRectangleIcon,
   ArrowRightIcon,
+  ArrowTopRightOnSquareIcon,
   ArrowUpRightIcon,
 } from "@heroicons/react/24/solid";
 import { useState } from "react";
@@ -195,7 +196,7 @@ export default function WebDevelopmentPage() {
               >
                 <div className="flex justify-center bg-[#00000080] items-center w-full h-full">
                   <p>Visit</p>
-                  <ArrowUpRightIcon className="w-auto h-4" />
+                  <ArrowTopRightOnSquareIcon className="w-auto h-4" />
                 </div>
               </Link>
             </div>
