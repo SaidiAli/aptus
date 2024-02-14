@@ -10,7 +10,7 @@ const navigation = [
   { name: "Development", href: "/web-development" },
   { name: "Digital Marketing", href: "/digital-marketing" },
   { name: "Agency", href: "#" },
-  { name: "Contact", href: "#" },
+  { name: "Contact", href: "#contact" },
 ];
 
 export default function Navbar() {

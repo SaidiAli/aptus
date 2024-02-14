@@ -1,7 +1,20 @@
+"use client";
+
 import ClippedImage from "@/components/ClippedImage";
 import ContactCTA from "@/components/contact-card";
+import mrembo from "../../../public/images/mrembo-home.png";
+import Image from "next/image";
+import {
+  ArrowRightEndOnRectangleIcon,
+  ArrowRightIcon,
+  ArrowUpRightIcon,
+} from "@heroicons/react/24/solid";
+import { useState } from "react";
+import Link from "next/link";
 
 export default function WebDevelopmentPage() {
+  // const router = useRouter();
+  const [isHovered, setIsHovered] = useState(false);
   return (
     <>
       <div className="w-full px-8 md:px-16 py-32 md:py-44 bg-gray-100">
@@ -39,7 +52,10 @@ export default function WebDevelopmentPage() {
         </div>
       </div>
 
-      <div className="mx-auto max-w-7xl px-8 md:px-16 mt-24">
+      <div
+        className="mx-auto max-w-7xl px-8 md:px-16 mt-24 py-8
+      "
+      >
         <div className="mx-auto max-w-2xl lg:max-w-none">
           <div>
             <ul
@@ -50,11 +66,10 @@ export default function WebDevelopmentPage() {
                 <div>
                   <div className="pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
                     <strong className="font-semibold text-neutral-950">
-                      Meticulous.
+                      Modern Design.
                     </strong>{" "}
-                    The first part of any partnership is getting our designer to
-                    put your logo in our template. The second step is getting
-                    them to do the colors.
+                    Successful websites require both an optimized design and a
+                    user experience that is easy to use.
                   </div>
                 </div>
               </li>
@@ -62,10 +77,11 @@ export default function WebDevelopmentPage() {
                 <div>
                   <div className="pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
                     <strong className="font-semibold text-neutral-950">
-                      Efficient.
+                      Domain & Email.
                     </strong>{" "}
-                    We pride ourselves on never missing a deadline which is easy
-                    because most of the work was done years ago.
+                    Using generic free email addresses is acceptable for
+                    personal use, but having a business email that matches your
+                    domain adds a higher level of professionalism.
                   </div>
                 </div>
               </li>
@@ -73,10 +89,11 @@ export default function WebDevelopmentPage() {
                 <div>
                   <div className="pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
                     <strong className="font-semibold text-neutral-950">
-                      Adaptable.
+                      Search Engine Optimization.
                     </strong>{" "}
-                    Every business has unique needs and our greatest challenge
-                    is shoe-horning those needs into something we already built.
+                    Our team ensures that all content is optimized for search
+                    engines, which enhances your online presence on Google and
+                    drives more traffic to your website.
                   </div>
                 </div>
               </li>
@@ -84,10 +101,12 @@ export default function WebDevelopmentPage() {
                 <div>
                   <div className="pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
                     <strong className="font-semibold text-neutral-950">
-                      Honest.
+                      Conversion Focus.
                     </strong>{" "}
-                    We are transparent about all of our processes, banking on
-                    the simple fact our clients never actually read anything.
+                    Our designers have a deep understanding of the best
+                    practices for conversion optimization. They know how to
+                    capture attention, generate interest, and ultimately drive
+                    action, which is our ultimate objective.
                   </div>
                 </div>
               </li>
@@ -95,11 +114,11 @@ export default function WebDevelopmentPage() {
                 <div>
                   <div className="pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
                     <strong className="font-semibold text-neutral-950">
-                      Loyal.
+                      Solid Security.
                     </strong>{" "}
-                    We foster long-term relationships with our clients that go
-                    beyond just delivering a product, allowing us to invoice
-                    them for decades.
+                    All data transfers are protected by SSL and 256-bit
+                    encryption, ensuring the security of your visitors and
+                    enhancing your Google ranking
                   </div>
                 </div>
               </li>
@@ -107,11 +126,11 @@ export default function WebDevelopmentPage() {
                 <div>
                   <div className="pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
                     <strong className="font-semibold text-neutral-950">
-                      Innovative.
+                      Maintenance & Updates.
                     </strong>{" "}
-                    The technological landscape is always evolving and so are
-                    we. We are constantly on the lookout for new open source
-                    projects to clone.
+                    Once your site is live, we will handle the editing for you.
+                    The frequency of these edits will vary depending on the plan
+                    you select.
                   </div>
                 </div>
               </li>
@@ -119,6 +138,70 @@ export default function WebDevelopmentPage() {
           </div>
         </div>
       </div>
+
+      <section className="w-full bg-[#64c4b5] px-8 md:px-16 py-16 md:py-32">
+        <div className="flex flex-col md:flex-row gap-8">
+          <div className="md:w-1/2">
+            <h2 className="text-3xl font-bold mb-8">E-Commerce</h2>
+            <p className="mb-4 text-sm">
+              We are at the forefront of modern e-commerce development. With our
+              focus on modern design, data-driven and scalable store fronts
+              ready for conversion
+            </p>
+            <p className="mb-4 font-bold">What we do</p>
+
+            <h2 className="font-bold">
+              <ArrowRightIcon className="w-auto h-6 inline" />
+              E-commerce Development Services
+            </h2>
+            <p className="mb-4 text-sm">
+              We offer services for planning, designing, developing, and
+              migrating platforms to help you expand your business and provide a
+              unique brand experience that delights your customers.
+            </p>
+            <h2 className="font-bold">
+              <ArrowRightIcon className="w-auto h-6 inline" />
+              E-Commerce Managed Services
+            </h2>
+            <p className="text-sm">
+              Ongoing support to manage, maintain, optimize, and support your
+              online store and digital infrastructure, so you can focus on
+              growing your business.
+            </p>
+          </div>
+          <div>
+            <p className="text-2xl font-bold mb-4 md:mb-8">Case Study</p>
+            <p className="mb-4">
+              Mrembo mart approached Aptus and needed a robust, easy to use and
+              beautifully designed with a modern UI online store and we
+              delivered.
+            </p>
+            <div
+              className="relative isolate max-w-[45rem]"
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
+              <Image
+                src={mrembo}
+                alt={"mrembo mart"}
+                className="rounded-md w-auto"
+              />
+              <Link
+                href={"https://mrembomart.com"}
+                className={`absolute w-full inset-0 ${
+                  isHovered ? "block" : "md:hidden"
+                }`}
+                target="black"
+              >
+                <div className="flex justify-center bg-[#00000080] items-center w-full h-full">
+                  <p>Visit</p>
+                  <ArrowUpRightIcon className="w-auto h-4" />
+                </div>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <ContactCTA />
     </>
