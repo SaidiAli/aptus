@@ -1,8 +1,7 @@
 import ClippedImage from "@/components/ClippedImage";
 import ContactCTA from "@/components/contact-card";
 import { CheckCircleIcon } from "@heroicons/react/16/solid";
-import { CheckBadgeIcon } from "@heroicons/react/24/solid";
-import { CheckCircle } from "lucide-react";
+import image from '../../../public/images/8.jpg';
 
 export default function WebDevelopmentPage() {
   return (
@@ -81,11 +80,12 @@ export default function WebDevelopmentPage() {
             </h3>
           </div>
         </div>
-        <ClippedImage />
+        <ClippedImage image={image} />
       </div>
 
       <div className="mx-auto max-w-7xl px-8 md:px-16 mt-24">
         <div className="mx-auto max-w-2xl lg:max-w-none">
+          <p className="text-black mb-8">Here&apos;s why Aptus is the perfect fit for your growth-minded business.</p>
           <div>
             <ul
               role="list"
@@ -95,11 +95,13 @@ export default function WebDevelopmentPage() {
                 <div>
                   <div className="pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
                     <strong className="font-semibold text-neutral-950">
-                      Meticulous.
+                      Demonstrated History of Success.
                     </strong>{" "}
-                    The first part of any partnership is getting our designer to
-                    put your logo in our template. The second step is getting
-                    them to do the colors.
+                    As an industry-leading marketing agency, that offers
+                    cost-effective services, we are skilled in executing
+                    effective campaigns. Our expertise lies in creating paid
+                    advertising campaigns that drive growth for our
+                    clients&apos; businesses.
                   </div>
                 </div>
               </li>
@@ -107,10 +109,12 @@ export default function WebDevelopmentPage() {
                 <div>
                   <div className="pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
                     <strong className="font-semibold text-neutral-950">
-                      Efficient.
+                      Conversion Driven Strategy.
                     </strong>{" "}
-                    We pride ourselves on never missing a deadline which is easy
-                    because most of the work was done years ago.
+                    We run campaigns that are focused on driving relevant
+                    traffic that converts into new sales. We are more than
+                    capable to ensure your business growth with our proven
+                    strategies.
                   </div>
                 </div>
               </li>
@@ -118,10 +122,11 @@ export default function WebDevelopmentPage() {
                 <div>
                   <div className="pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
                     <strong className="font-semibold text-neutral-950">
-                      Adaptable.
+                      Ad and Landing page performance.
                     </strong>{" "}
-                    Every business has unique needs and our greatest challenge
-                    is shoe-horning those needs into something we already built.
+                    Aptus&apos;s full-time, in-house team of marketing
+                    specialists is familiar with every aspect of maximizing the
+                    performance of your ads and landing pages.
                   </div>
                 </div>
               </li>
@@ -129,10 +134,11 @@ export default function WebDevelopmentPage() {
                 <div>
                   <div className="pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
                     <strong className="font-semibold text-neutral-950">
-                      Honest.
+                      AI & New Technology.
                     </strong>{" "}
-                    We are transparent about all of our processes, banking on
-                    the simple fact our clients never actually read anything.
+                    At Aptus, we leverage the latest and most effective
+                    tools/technology on the market to get the job done. This
+                    includes tracking tools, analytics and reporting tools.
                   </div>
                 </div>
               </li>
@@ -140,11 +146,12 @@ export default function WebDevelopmentPage() {
                 <div>
                   <div className="pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
                     <strong className="font-semibold text-neutral-950">
-                      Loyal.
+                      All round.
                     </strong>{" "}
-                    We foster long-term relationships with our clients that go
-                    beyond just delivering a product, allowing us to invoice
-                    them for decades.
+                    We use all digital channels to reach your customer and make
+                    that sale. This includes, but not limited to Social media,
+                    Email marketing, SEO, influencer marketing, Pay-per-click
+                    (Google ads) and much more.
                   </div>
                 </div>
               </li>
@@ -152,11 +159,12 @@ export default function WebDevelopmentPage() {
                 <div>
                   <div className="pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
                     <strong className="font-semibold text-neutral-950">
-                      Innovative.
+                      Analytic & Reporting.
                     </strong>{" "}
-                    The technological landscape is always evolving and so are
-                    we. We are constantly on the lookout for new open source
-                    projects to clone.
+                    Efficient marketing is a game of numbers. We collect the
+                    data, process it and report back to you giving insight in
+                    what is working and whats not. This way, you know exactly
+                    how your marketing budget is being spent.
                   </div>
                 </div>
               </li>

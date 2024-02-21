@@ -5,11 +5,12 @@ import logo from "../../public/images/black-nobg.png";
 import { Bars3Icon, PhoneIcon, XMarkIcon } from "@heroicons/react/24/solid";
 import { Dialog, Transition } from "@headlessui/react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const navigation = [
   { name: "Development", href: "/web-development" },
   { name: "Digital Marketing", href: "/digital-marketing" },
-  { name: "Agency", href: "#about" },
+  { name: "Agency", href: "/#about" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -50,8 +51,11 @@ export default function Navbar() {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="tel:0777343212" className="text-sm font-semibold leading-6 text-gray-900">
-            <PhoneIcon className="w-auto h-4 inline"/> 0777 343 212
+          <a
+            href="tel:0777343212"
+            className="text-sm font-semibold leading-6 text-gray-900"
+          >
+            <PhoneIcon className="w-auto h-4 inline" /> 0777 343 212
           </a>
         </div>
       </div>
@@ -109,11 +113,12 @@ export default function Navbar() {
                     ))}
                   </div>
                   <div className="py-6">
+                    <p className="text-black text-lg mb-4">Let&apos;s do business:</p>
                     <a
-                      href="#"
-                      className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      href="tel:0777343212"
+                      className="text-2xl font-semibold leading-6 text-gray-900"
                     >
-                      Log in
+                      <PhoneIcon className="w-auto h-8 inline" /> 0777 343 212
                     </a>
                   </div>
                 </div>

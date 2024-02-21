@@ -5,6 +5,7 @@ import logo from "../../public/images/logo-black.png";
 import Link from "next/link";
 
 export default function Footer() {
+  const date = new Date();
   return (
     <div className="px-8 md:px-32 py-8 text-neutral-400">
       <div className="hidden md:flex justify-between gap-32 mb-8">
@@ -44,7 +45,7 @@ export default function Footer() {
       </div>
       <div className="flex justify-between items-center border-t border-neutral-200 pt-4">
         <Image src={logo} alt={"logo"} className="w-auto h-8" />
-        <p className="text-xs">@Aptus Agency Inc. 2024</p>
+        <p className="text-xs">{`@Aptus Agency ${date.getFullYear()}.`}</p>
       </div>
     </div>
   );

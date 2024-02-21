@@ -12,6 +12,7 @@ import {
 } from "@heroicons/react/24/solid";
 import { useState } from "react";
 import Link from "next/link";
+import image from "../../../public/images/9.jpg";
 
 export default function WebDevelopmentPage() {
   // const router = useRouter();
@@ -32,7 +33,7 @@ export default function WebDevelopmentPage() {
         </div>
       </div>
       <div className="px-8 md:px-16 md:flex gap-8 mt-8">
-        <ClippedImage />
+        <ClippedImage image={image} />
         <div className="text-neutral-700 flex flex-col gap-8 max-w-xl mt-12">
           <p>
             Our team of experienced designers and developers work closely with

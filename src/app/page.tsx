@@ -9,6 +9,7 @@ import afriven from "../../public/images/clients/afriven.png";
 import mrembo from "../../public/images/mrembo-logo.png";
 import ContactCTA from "@/components/contact-card";
 import Link from "next/link";
+import codeImage from "../../public/images/seo-banner.jpg";
 
 export default function Home() {
   return (
@@ -66,13 +67,13 @@ export default function Home() {
           </p>
         </div>
         <div className="flex flex-col md:flex-row py-16 md:px-8 justify-between gap-4">
-          <ClippedImage />
+          <ClippedImage image={codeImage} />
 
           <div className="max-w-xl">
             <div className="mb-8 md:mb-16">
               <p className="text-gray-500">
                 <strong className="text-neutral-700 font-bold">
-                  Web development.
+                  Web development:
                 </strong>{" "}
                 We specialize in crafting beautiful, high quality, custom
                 designed websites, E-Commerce stores and custom Web
@@ -89,7 +90,7 @@ export default function Home() {
             <div className="mb-8 md:mb-16">
               <p className="text-gray-500">
                 <strong className="text-neutral-700 font-bold">
-                  Mobile Application development.
+                  Mobile Application development:
                 </strong>{" "}
                 At Aptus we excel in developing mobile applications that engage
                 users and generate valuable leads for growth-oriented
@@ -99,7 +100,7 @@ export default function Home() {
             <div className="mb-8 md:mb-16">
               <p className="text-gray-500">
                 <strong className="text-neutral-700 font-bold">
-                  E-commerce.
+                  E-commerce:
                 </strong>{" "}
                 We are at the forefront of modern e-commerce development. With
                 our focus on modern design, data-driven and scalable store
@@ -109,7 +110,7 @@ export default function Home() {
             <div className="mb-8 md:mb-8">
               <p className="text-gray-500">
                 <strong className="text-neutral-700 font-bold">
-                  Digital Marketing
+                  Digital Marketing:
                 </strong>{" "}
                 From pay-per-click ads and search engine optimization to social
                 media content and marketing. We do it all at a very professional
@@ -129,12 +130,14 @@ export default function Home() {
       <section className="px-8 md:px-16 py-16 md:py-32" id="about">
         <div className="m-auto max-w-3xl">
           <p className="text-neutral-900 text-2xl">
-            Aptus Agency is an agency that offers comprehensive online marketing
-            services. We have been serving clients from various industries with
-            a diverse range of services. Our expertise lies in providing
-            professional IT solutions for various online marketing strategies.
-            Instead of choosing any digital marketing agency, opt for one that
-            shows results.
+            Aptus Agency, we craft conversion-focused websites, drive e-commerce
+            revenue through expert PPC & SEO services. Our in-house team builds
+            high-performing websites & e-commerce stores, optimizes search
+            ranking, & manages targeted ads, all with proven results for B2B &
+            B2C firms. From startups to established brands, our expertise &
+            experience across all digital marketing disciplines helps businesses
+            attract the right audience, increase leads, & grow revenue – no
+            matter the budget.
           </p>
         </div>
       </section>
