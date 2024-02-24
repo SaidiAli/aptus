@@ -1,10 +1,16 @@
+"use client";
+
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import Image from "next/image";
 import logo from "../../public/images/logo-black.png";
 import Link from "next/link";
+import { useFormState, useFormStatus } from "react-dom";
+import { subscribe } from "@/actions";
+import { useState } from "react";
 
 export default function Footer() {
+  const [state, formAction] = useFormState(subscribe, null);
   const date = new Date();
   return (
     <div className="px-8 md:px-32 py-8 text-neutral-400">
@@ -17,17 +23,18 @@ export default function Footer() {
             Subscribe to get the latest design news, articles, resources and
             inspiration.
           </p>
-          <form action="">
+          <form action={formAction}>
             <div className="flex w-full max-w-sm items-center space-x-2">
               <Input type="email" placeholder="Email" className="bg-white" />
-              <Button
-                type="submit"
-                variant="default"
-                className="bg-black text-white"
-              >
-                Subscribe
-              </Button>
+              <SubmitBtn />
             </div>
+            <p
+              className={`${
+                state?.status === "success" ? "text-green-500" : "text-red-500"
+              }`}
+            >
+              {state?.message}
+            </p>
           </form>
         </div>
         <div>
@@ -48,5 +55,15 @@ export default function Footer() {
         <p className="text-xs">{`@Aptus Agency ${date.getFullYear()}.`}</p>
       </div>
     </div>
+  );
+}
+
+function SubmitBtn() {
+  const { pending } = useFormStatus();
+
+  return (
+    <Button type="submit" variant="default" name="email" className="bg-black text-white hover:bg-black">
+      {pending ? "working .." : "Subscribe"}
+    </Button>
   );
 }
