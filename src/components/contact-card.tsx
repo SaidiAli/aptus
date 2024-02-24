@@ -50,7 +50,7 @@ export default function ContactCTA() {
       headers: {
         "Content-Type": "application/json",
         Authorization:
-          "Bearer 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",
+          `Bearer ${process.env.SENDGRID_API_KEY}`,
       },
       body: JSON.stringify(data),
     });
