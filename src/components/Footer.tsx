@@ -25,7 +25,7 @@ export default function Footer() {
           </p>
           <form action={formAction}>
             <div className="flex w-full max-w-sm items-center space-x-2">
-              <Input type="email" placeholder="Email" className="bg-white" />
+              <Input type="email" placeholder="Email" className="bg-white" required />
               <SubmitBtn />
             </div>
             <p
