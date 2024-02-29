@@ -1,7 +1,12 @@
 import ClippedImage from "@/components/ClippedImage";
 import ContactCTA from "@/components/contact-card";
 import { CheckCircleIcon } from "@heroicons/react/16/solid";
-import image from '../../../public/images/8.jpg';
+import image from "../../../public/images/8.jpg";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Digital marketing",
+};
 
 export default function WebDevelopmentPage() {
   return (
@@ -85,7 +90,10 @@ export default function WebDevelopmentPage() {
 
       <div className="mx-auto max-w-7xl px-8 md:px-16 mt-24">
         <div className="mx-auto max-w-2xl lg:max-w-none">
-          <p className="text-black mb-8">Here&apos;s why Aptus is the perfect fit for your growth-minded business.</p>
+          <p className="text-black mb-8">
+            Here&apos;s why Aptus is the perfect fit for your growth-minded
+            business.
+          </p>
           <div>
             <ul
               role="list"

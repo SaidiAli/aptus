@@ -71,10 +71,8 @@ export default function Home() {
 
           <div className="max-w-xl">
             <div className="mb-8 md:mb-16">
+              <h2 className="text-neutral-700 font-bold">Web development</h2>
               <p className="text-gray-500">
-                <strong className="text-neutral-700 font-bold">
-                  Web development:
-                </strong>{" "}
                 We specialize in crafting beautiful, high quality, custom
                 designed websites, E-Commerce stores and custom Web
                 Applications/systems, any web based tool that you feel your
@@ -88,30 +86,26 @@ export default function Home() {
               </Link>
             </div>
             <div className="mb-8 md:mb-16">
+              <h2 className="text-neutral-700 font-bold">
+                Mobile Application development
+              </h2>
               <p className="text-gray-500">
-                <strong className="text-neutral-700 font-bold">
-                  Mobile Application development:
-                </strong>{" "}
                 At Aptus we excel in developing mobile applications that engage
                 users and generate valuable leads for growth-oriented
                 businesses.
               </p>
             </div>
             <div className="mb-8 md:mb-16">
+              <h2 className="text-neutral-700 font-bold">E-commerce</h2>
               <p className="text-gray-500">
-                <strong className="text-neutral-700 font-bold">
-                  E-commerce:
-                </strong>{" "}
                 We are at the forefront of modern e-commerce development. With
                 our focus on modern design, data-driven and scalable store
                 fronts ready for conversion
               </p>
             </div>
             <div className="mb-8 md:mb-8">
+              <h2 className="text-neutral-700 font-bold">Digital Marketing</h2>
               <p className="text-gray-500">
-                <strong className="text-neutral-700 font-bold">
-                  Digital Marketing:
-                </strong>{" "}
                 From pay-per-click ads and search engine optimization to social
                 media content and marketing. We do it all at a very professional
                 level.

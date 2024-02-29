@@ -25,9 +25,9 @@ export default function Hero() {
             </h1>
           </div>
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+            <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
               Growth focused creative digital agency
-            </h1>
+            </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               We are a full-service creative digital agency working at the
               intersection of marketing and development. Our process involves

@@ -1,22 +1,15 @@
-"use client";
-
 import ClippedImage from "@/components/ClippedImage";
 import ContactCTA from "@/components/contact-card";
-import mrembo from "../../../public/images/mrembo-home.png";
-import Image from "next/image";
-import {
-  ArrowRightEndOnRectangleIcon,
-  ArrowRightIcon,
-  ArrowTopRightOnSquareIcon,
-  ArrowUpRightIcon,
-} from "@heroicons/react/24/solid";
-import { useState } from "react";
-import Link from "next/link";
+import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import image from "../../../public/images/9.jpg";
+import ProjectCase from "@/components/project-case";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Web and Mobile Development",
+};
 
 export default function WebDevelopmentPage() {
-  // const router = useRouter();
-  const [isHovered, setIsHovered] = useState(false);
   return (
     <>
       <div className="w-full px-8 md:px-16 py-32 md:py-44 bg-gray-100">
@@ -178,29 +171,7 @@ export default function WebDevelopmentPage() {
               beautifully designed with a modern UI online store and we
               delivered.
             </p>
-            <div
-              className="relative isolate max-w-[45rem]"
-              onMouseEnter={() => setIsHovered(true)}
-              onMouseLeave={() => setIsHovered(false)}
-            >
-              <Image
-                src={mrembo}
-                alt={"mrembo mart"}
-                className="rounded-md w-auto"
-              />
-              <Link
-                href={"https://mrembomart.com"}
-                className={`absolute w-full inset-0 ${
-                  isHovered ? "block" : "md:hidden"
-                }`}
-                target="black"
-              >
-                <div className="flex justify-center bg-[#00000080] items-center w-full h-full">
-                  <p>Visit</p>
-                  <ArrowTopRightOnSquareIcon className="w-auto h-4" />
-                </div>
-              </Link>
-            </div>
+            <ProjectCase />
           </div>
         </div>
       </section>
