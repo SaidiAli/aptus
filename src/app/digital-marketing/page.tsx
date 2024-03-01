@@ -50,6 +50,9 @@ export default function WebDevelopmentPage() {
               marketing
             </h3>
             <h3 className="">
+              <CheckCircleIcon className="inline w-auto h-6" /> Social Media Management
+            </h3>
+            <h3 className="">
               <CheckCircleIcon className="inline w-auto h-6" /> Web traffic
               generation
             </h3>
