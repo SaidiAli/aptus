@@ -52,10 +52,10 @@ export default function Navbar() {
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
-            href="tel:0777343212"
+            href="tel:0788300819"
             className="text-sm font-semibold leading-6 text-gray-900"
           >
-            <PhoneIcon className="w-auto h-4 inline" /> 0777 343 212
+            <PhoneIcon className="w-auto h-4 inline" /> 0788 300 819
           </a>
         </div>
       </div>
@@ -115,10 +115,10 @@ export default function Navbar() {
                   <div className="py-6">
                     <p className="text-black text-lg mb-4">Let&apos;s do business:</p>
                     <a
-                      href="tel:0777343212"
+                      href="tel:0788300819"
                       className="text-2xl font-semibold leading-6 text-gray-900"
                     >
-                      <PhoneIcon className="w-auto h-8 inline" /> 0777 343 212
+                      <PhoneIcon className="w-auto h-8 inline" /> 0788 300 819
                     </a>
                   </div>
                 </div>

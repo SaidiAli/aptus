@@ -73,7 +73,7 @@ export default function ContactCTA() {
               <p className="font-bold">Call Us</p>
               <div className="flex gap-2">
                 <PhoneIcon className="w-4" />
-                <a href="tel:0777343212">0777 343 212 / 0788 300 819</a>
+                <a href="tel:0788300819">0788 300 819</a>
               </div>
             </div>
             <Link
