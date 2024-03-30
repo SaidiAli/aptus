@@ -5,6 +5,7 @@ import clsx from "clsx";
 import Footer from "@/components/Footer";
 import { Metadata } from "next";
 import Script from "next/script";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -100,66 +101,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark scroll-smooth">
-      <head>
-        {/* Google Tag Manager */}
-        <Script
-        id="gtm"
-          dangerouslySetInnerHTML={{
-            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-5NWK47T9');`,
-          }}
-        />
-        {/* End Google Tag Manager */}
-
-        {/* Google tag (gtag.js) */}
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-FSKRHZSDK3"
-        />
-        <Script
-        id="gtag"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-FSKRHZSDK3');
-            `,
-          }}
-        />
-        {/* End Google tag (gtag.js) */}
-
-        {/* Microsoft Clarity */}
-        <Script
-        id="clarity"
-          type="text/javascript"
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(c,l,a,r,i,t,y){
-                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-              })(window, document, "clarity", "script", "l99kn9qnyb");
-            `,
-          }}
-        />
-        {/* End Microsoft Clarity */}
-      </head>
+      <GoogleTagManager gtmId="GTM-5NWK47T9" />
       <body className={clsx(inter.className, "bg-white")}>
-        <noscript>
-          {/* Google Tag Manager (noscript) */}
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-5NWK47T9"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          />
-          {/* End Google Tag Manager (noscript) */}
-        </noscript>
-
         <Navbar />
         {children}
         <Footer />
