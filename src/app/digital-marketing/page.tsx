@@ -13,7 +13,7 @@ export default function WebDevelopmentPage() {
     <>
       <div className="w-full px-8 md:px-16 py-32 md:py-44 bg-gray-100">
         <div className="max-w-2xl">
-          <h2 className="text-black text-sm mb-2">Digital Marketing</h2>
+          <h1 className="text-black text-sm mb-2">Digital Marketing</h1>
           <p className="text-black text-3xl md:text-5xl font-bold mb-2">
             We craft marketing strategies that drive sales and increase revenue
           </p>
@@ -41,51 +41,51 @@ export default function WebDevelopmentPage() {
           </p>
           <div>
             <p>What we do!</p>
-            <h3 className="">
+            <h2 className="">
               <CheckCircleIcon className="inline w-auto h-6" /> Digital Media
               Campaign Development
-            </h3>
-            <h3 className="">
+            </h2>
+            <h2 className="">
               <CheckCircleIcon className="inline w-auto h-6" /> Internet
               marketing
-            </h3>
-            <h3 className="">
+            </h2>
+            <h2 className="">
               <CheckCircleIcon className="inline w-auto h-6" /> Social Media Management
-            </h3>
-            <h3 className="">
+            </h2>
+            <h2 className="">
               <CheckCircleIcon className="inline w-auto h-6" /> Web traffic
               generation
-            </h3>
-            <h3 className="">
+            </h2>
+            <h2 className="">
               <CheckCircleIcon className="inline w-auto h-6" /> Google Display
               Ads
-            </h3>
-            <h3 className="">
+            </h2>
+            <h2 className="">
               <CheckCircleIcon className="inline w-auto h-6" /> Youtube Ads
-            </h3>
-            <h3 className="">
+            </h2>
+            <h2 className="">
               <CheckCircleIcon className="inline w-auto h-6" /> Google Search
               Ads
-            </h3>
-            <h3 className="">
+            </h2>
+            <h2 className="">
               <CheckCircleIcon className="inline w-auto h-6" /> Bing Ads
-            </h3>
-            <h3 className="">
+            </h2>
+            <h2 className="">
               <CheckCircleIcon className="inline w-auto h-6" /> Bing Remarketing
               Ads
-            </h3>
-            <h3 className="">
+            </h2>
+            <h2 className="">
               <CheckCircleIcon className="inline w-auto h-6" /> Contextual
               Advertising
-            </h3>
-            <h3 className="">
+            </h2>
+            <h2 className="">
               <CheckCircleIcon className="inline w-auto h-6" /> Media Audit and
               Media Planning
-            </h3>
-            <h3 className="">
+            </h2>
+            <h2 className="">
               <CheckCircleIcon className="inline w-auto h-6" /> Analytics and
               Reporting
-            </h3>
+            </h2>
           </div>
         </div>
         <ClippedImage image={image} />
