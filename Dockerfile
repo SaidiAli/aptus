@@ -12,10 +12,8 @@ RUN npm install
 
 COPY . . 
 
-ENV NEXT_PUBLIC_ENVIRONMENT='development'
-
-ENV NEXT_PUBLIC_BASE_URL='http://localhost:5001/api'
+ENV SENDGRID_API_KEY='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'
 
 EXPOSE 3000
 
-CMD ["npm", "run", "dev"]
+CMD ["npm", "run", "start"]
